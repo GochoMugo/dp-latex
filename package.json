@@ -1,0 +1,29 @@
+{
+  "name": "dp-latex",
+  "version": "0.0.0",
+  "description": "Docvy App Plugin for Latex",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GochoMugo/dp-latex.git"
+  },
+  "keywords": [
+    "docvy",
+    "plugin",
+    "latex"
+  ],
+  "author": "GochoMugo <mugo@forfuture.co.ke>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GochoMugo/dp-latex/issues"
+  },
+  "homepage": "https://github.com/GochoMugo/dp-latex",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-mocha-test": "latest"
+  }
+}
