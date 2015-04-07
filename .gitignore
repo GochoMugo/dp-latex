@@ -4,3 +4,6 @@ node_modules/
 # some shell utilities
 utils.sh
 
+# MathJax downloaded zipfile
+master.zip
+

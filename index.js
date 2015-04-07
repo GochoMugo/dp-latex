@@ -1,6 +1,15 @@
+/**
+* A Docvy App plugin for converting latex documents to html
+*
+* The MIT License (MIT)
+* Copyright (c) 2015 GochoMugo <mugo@forfuture.co.ke>
+*/
+
+
 "use strict";
 
 
+// built-in modules
 var fs = require("fs");
 
 
@@ -11,7 +20,7 @@ exports.accepts = function() {
 
 exports.produces = function() {
   return ["html"];
-}
+};
 
 
 exports.run = function(rawData, expects, callback) {
@@ -20,8 +29,9 @@ exports.run = function(rawData, expects, callback) {
       encoding: "utf8"
     }, function(err, data) {
       if (err) { return callback(err); }
-      return callback(null, "html", data.replace(/{LATEX}/g, rawData));
+      return callback(null, "html", rawData.replace(/\{LATEX}\/g, data));
     })
   }
   return callback(new Error());
 };
+

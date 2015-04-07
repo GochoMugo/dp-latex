@@ -19,11 +19,11 @@ wget -nc https://raw.githubusercontent.com/GochoMugo/docvy-devtools/master/utils
 source utils.sh
 
 
-log "installing LaTeX2HTML5 JS" 0
+log "getting LaTeX2HTML5 JS" 0
 wget --directory-prefix=assets https://raw.github.com/Mathapedia/LaTeX2HTML5/master/latex2html5.min.js
 
 
-log "installing LaTeX2HTML5 CSS" 0
+log "getting LaTeX2HTML5 CSS" 0
 wget --directory-prefix=assets https://raw.github.com/Mathapedia/LaTeX2HTML5/master/css/latex2html5.css
 
 
